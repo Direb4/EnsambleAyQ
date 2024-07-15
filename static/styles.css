@@ -46,3 +46,7 @@ header {
         /* ... */
         z-index: 99;
 }
+
+.cabecera :hover svg, .cabecera :hover {
+    fill: lightgray;
+}
