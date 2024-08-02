@@ -1,4 +1,4 @@
-from flask import Flask, flash, redirect, render_template, request, session
+from flask import Flask, redirect, render_template, request
 from cs50 import SQL
 import smtplib
 from email.mime.text import MIMEText
