@@ -26,6 +26,7 @@ fonttools==4.51.0
 geojson-rewind==1.1.0
 geomet==1.1.0
 greenlet==3.0.3
+gunicorn==22.0.0
 httplib2==0.20.2
 idna==3.7
 importlib-metadata==4.6.4
