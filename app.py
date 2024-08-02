@@ -51,3 +51,5 @@ def contacto():
 def clientes():
     return render_template("clientes.html")
 
+if __name__ == '__main__':
+    app.run() 
