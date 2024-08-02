@@ -1,5 +1,16 @@
 {% extends "layout.html" %}
 
+{% block head %}
+
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/abouts/about-2/assets/css/about-2.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/teams/team-2/assets/css/team-2.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/teams/team-1/assets/css/team-1.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/authors/author-2/assets/css/author-2.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/abouts/about-5/assets/css/about-5.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/abouts/about-4/assets/css/about-4.css">
+
+{% endblock %}
+
 {% block title %}
 
     Quienes Somos
@@ -7,6 +18,383 @@
 {% endblock %}
 
 {% block main %}
+
+<section class="py-3 py-md-5">
+    <div class="container">
+      <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+        <div class="col-12 col-lg-6">
+          <img class="img-fluid rounded" loading="lazy" src="./assets/img/about-img-1.webp" alt="About 2">
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="row justify-content-xl-center">
+            <div class="col-12 col-xl-10">
+              <h2 class="mb-3">Why Choose Us?</h2>
+              <p class="lead fs-4 mb-3 mb-xl-5">With years of experience and deep industry knowledge, we have a proven track record of success and are constantly pushing ourselves to stay ahead of the curve.</p>
+              <div class="d-flex align-items-center mb-3">
+                <div class="me-3 text-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="fs-5 m-0">Our evolution procedure is super intelligent.</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mb-3">
+                <div class="me-3 text-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="fs-5 m-0">We deliver services beyond expectations.</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mb-4 mb-xl-5">
+                <div class="me-3 text-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="fs-5 m-0">Let's hire us to reach your objectives.</p>
+                </div>
+              </div>
+              <button type="button" class="btn bsb-btn-xl btn-outline-primary rounded-pill">Connect Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-3 py-md-5 py-xl-8">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+          <h2 class="fs-6 text-secondary mb-2 text-uppercase text-center">Our Team</h2>
+          <p class="display-5 mb-4 mb-md-5 text-center">With Our Team, you can expect personalized attention and engaging designs.</p>
+          <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+        </div>
+      </div>
+    </div>
+  
+    <div class="container overflow-hidden">
+      <div class="row gy-4 gy-lg-0">
+        <div class="col-12 col-lg-4">
+          <div class="card border-0">
+            <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
+              <a href="#!">
+                <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="./assets/img/team-img-1.jpg" alt="Flora Nyra">
+              </a>
+              <figcaption>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                  <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                </svg>
+                <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Read More</h4>
+              </figcaption>
+            </figure>
+            <div class="card-body border bg-white p-4">
+              <h2 class="card-title h4 fw-bold mb-3">Flora Nyra</h2>
+              <p class="card-text text-secondary">Define the product vision and strategy and conduct user research to understand the needs of the target market.</p>
+            </div>
+            <div class="card-footer border border-top-0 bg-white p-4">
+              <ul class="nav mb-0 bsb-nav-sep">
+                <li class="nav-item text-secondary">
+                  <a class="nav-link link-secondary p-0 pe-3 d-inline-flex align-items-center" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-lightbulb text-primary" viewBox="0 0 16 16">
+                      <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z" />
+                    </svg>
+                    <span class="ms-2 fs-6">Product Manager</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card border-0">
+            <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
+              <a href="#!">
+                <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="./assets/img/team-img-3.jpg" alt="James Levi">
+              </a>
+              <figcaption>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                  <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                </svg>
+                <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Read More</h4>
+              </figcaption>
+            </figure>
+            <div class="card-body border bg-white p-4">
+              <h2 class="card-title h4 fw-bold mb-3">James Levi</h2>
+              <p class="card-text text-secondary">Analyze financial statements to assess a company's financial performance and develop financial models for future performance.</p>
+            </div>
+            <div class="card-footer border border-top-0 bg-white p-4">
+              <ul class="nav mb-0 bsb-nav-sep">
+                <li class="nav-item text-secondary">
+                  <a class="nav-link link-secondary p-0 pe-3 d-inline-flex align-items-center" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-layers text-primary" viewBox="0 0 16 16">
+                      <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zm3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0l3.515-1.874zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z" />
+                    </svg>
+                    <span class="ms-2 fs-6">Financial Analyst</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card border-0">
+            <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
+              <a href="#!">
+                <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="./assets/img/team-img-2.jpg" alt="Taytum Elia">
+              </a>
+              <figcaption>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                  <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                </svg>
+                <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Read More</h4>
+              </figcaption>
+            </figure>
+            <div class="card-body border bg-white p-4">
+              <h2 class="card-title h4 fw-bold mb-3">Taytum Elia</h2>
+              <p class="card-text text-secondary">Develop and oversee the visual concept for a product or brand and direct and review the work of other creative professionals.</p>
+            </div>
+            <div class="card-footer border border-top-0 bg-white p-4">
+              <ul class="nav mb-0 bsb-nav-sep">
+                <li class="nav-item text-secondary">
+                  <a class="nav-link link-secondary p-0 pe-3 d-inline-flex align-items-center" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-brush text-primary" viewBox="0 0 16 16">
+                      <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.39 3.39 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3.122 3.122 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043.002.001h-.002z" />
+                    </svg>
+                    <span class="ms-2 fs-6">Art Director</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-light py-3 py-md-5 py-xl-8">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+          <h2 class="mb-4 display-5 text-center">Our Team</h2>
+          <p class="text-secondary mb-5 text-center lead fs-4">We are a group of innovative, experienced, and proficient teams. You will love to collaborate with us.</p>
+          <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+        </div>
+      </div>
+    </div>
+  
+    <div class="container overflow-hidden">
+      <div class="row gy-4 gy-lg-0 gx-xxl-5">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card border-0 border-bottom border-primary shadow-sm overflow-hidden">
+            <div class="card-body p-0">
+              <figure class="m-0 p-0">
+                <img class="img-fluid" loading="lazy" src="./assets/img/team-img-1.jpg" alt="Flora Nyra">
+                <figcaption class="m-0 p-4">
+                  <h4 class="mb-1">Flora Nyra</h4>
+                  <p class="text-secondary mb-0">Product Manager</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card border-0 border-bottom border-primary shadow-sm overflow-hidden">
+            <div class="card-body p-0">
+              <figure class="m-0 p-0">
+                <img class="img-fluid" loading="lazy" src="./assets/img/team-img-5.jpg" alt="Evander Mac">
+                <figcaption class="m-0 p-4">
+                  <h4 class="mb-1">Evander Mac</h4>
+                  <p class="text-secondary mb-0">Art Director</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card border-0 border-bottom border-primary shadow-sm overflow-hidden">
+            <div class="card-body p-0">
+              <figure class="m-0 p-0">
+                <img class="img-fluid" loading="lazy" src="./assets/img/team-img-2.jpg" alt="Taytum Elia">
+                <figcaption class="m-0 p-4">
+                  <h4 class="mb-1">Taytum Elia</h4>
+                  <p class="text-secondary mb-0">Investment Planner</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card border-0 border-bottom border-primary shadow-sm overflow-hidden">
+            <div class="card-body p-0">
+              <figure class="m-0 p-0">
+                <img class="img-fluid" loading="lazy" src="./assets/img/team-img-4.jpg" alt="Wylder Elio">
+                <figcaption class="m-0 p-4">
+                  <h4 class="mb-1">Wylder Elio</h4>
+                  <p class="text-secondary mb-0">Financial Analyst</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bsb-author-2 py-3 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 col-xl-8 col-xxl-7">
+          <div class="card border-light-subtle p-4">
+            <div class="row gy-3 align-items-center">
+              <div class="col-md-4">
+                <a href="#!" class="bsb-hover-image d-block rounded overflow-hidden">
+                  <img class="img-fluid author-avatar bsb-scale bsb-hover-scale-up" loading="lazy" src="./assets/img/author-img-1.jpg" alt="Iris Henry">
+                </a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Article written by</h6>
+                  <h3 class="card-title mb-2">
+                    <a class="card-link link-dark text-decoration-none" href="#!">Iris Henry</a>
+                  </h3>
+                  <p class="card-text mb-3">I am skilled in all aspects of web design, from planning and development to design and testing. I also have experience in web development technologies.</p>
+                  <ul class="bsb-social-media nav m-0">
+                    <li class="nav-item">
+                      <a class="nav-link link-dark" href="#!">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link-dark" href="#!">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                          <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link-dark" href="#!">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link-dark" href="#!">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-3 py-md-5 py-xl-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-10 col-lg-8">
+          <h3 class="fs-5 mb-2 text-secondary text-uppercase">About</h3>
+          <h2 class="display-5 mb-4">Our journey began with a dream of redefining how the world perceives design.</h2>
+          <button type="button" class="btn btn-lg btn-primary mb-3 mb-md-4 mb-xl-5">Discover More</button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container overflow-hidden">
+      <div class="row gy-4 gy-lg-0">
+        <div class="col-12 col-lg-6">
+          <article>
+            <div class="card border-0">
+              <img class="card-img-top img-fluid m-0" loading="lazy" src="./assets/img/about-img-1.jpg" alt="Our Vision">
+              <div class="card-body border bg-white p-4">
+                <div class="entry-header mb-3">
+                  <h2 class="card-title entry-title h4 mb-0">
+                    <a class="link-dark text-decoration-none" href="#!">Our Vision</a>
+                  </h2>
+                </div>
+                <p class="card-text entry-summary text-secondary mb-3">From sleek modernism to timeless elegance, we infuse every creation with a touch of our artistic ingenuity. As a design agency, great design can shape perceptions, inspire action, and leave an indelible mark on the world.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-lg-6">
+          <article>
+            <div class="card border-0">
+              <img class="card-img-top img-fluid m-0" loading="lazy" src="./assets/img/about-img-2.jpg" alt="Our Approach">
+              <div class="card-body border bg-white p-4">
+                <div class="entry-header mb-3">
+                  <h2 class="card-title entry-title h4 mb-0">
+                    <a class="link-dark text-decoration-none" href="#!">Our Approach</a>
+                  </h2>
+                </div>
+                <p class="card-text entry-summary text-secondary mb-3">Welcome to our design agency, where creativity knows no bounds and innovation takes center stage. We are a team of dedicated designers, strategists, and visionaries with a passion for transforming ideas into captivating visuals.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-3 py-md-5 py-xl-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-10 col-lg-8">
+          <h3 class="fs-5 mb-2 text-secondary text-uppercase">About</h3>
+          <h2 class="display-5 mb-4">At our core, we prioritize pushing boundaries, embracing the unknown, and fostering a culture of continuous learning.</h2>
+          <button type="button" class="btn btn-lg btn-primary mb-3 mb-md-4 mb-xl-5">Connect Now</button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container">
+      <div class="row gy-3 gy-md-4 gy-lg-0">
+        <div class="col-12 col-lg-6">
+          <div class="card bg-light p-3 m-0">
+            <div class="row gy-3 gy-md-0 align-items-md-center">
+              <div class="col-md-5">
+                <img src="./assets/img/about-img-2.jpg" class="img-fluid rounded-start" alt="Why Choose Us?">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body p-0">
+                  <h2 class="card-title h4 mb-3">Why Choose Us?</h2>
+                  <p class="card-text lead">With years of experience and deep industry knowledge, we have a proven track record of success and are pushing ourselves to stay ahead of the curve.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="card bg-light p-3 m-0">
+            <div class="row gy-3 gy-md-0 align-items-md-center">
+              <div class="col-md-5">
+                <img src="./assets/img/about-img-1.jpg" class="img-fluid rounded-start" alt="Visionary Team">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body p-0">
+                  <h2 class="card-title h4 mb-3">Visionary Team</h2>
+                  <p class="card-text lead">With a team of visionary engineers, developers, and creative minds, we embark on a journey to transform complex challenges into ingenious technological solutions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 {% endblock %}

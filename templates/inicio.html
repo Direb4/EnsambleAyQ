@@ -1,5 +1,15 @@
 {% extends "layout.html" %}
 
+{% block head %}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/facts/fact-5/assets/css/fact-5.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+{% endblock %}
+
 {% block title %}
 
     inicio
@@ -7,10 +17,6 @@
 {% endblock %}
 
 {% block main %}
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-  <script>
-    AOS.init();
-  </script>
   <div id="carouselExampleCaptions" class="carousel slide carousel-fade" style="border-radius: 5px;" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -18,25 +24,22 @@
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active" id="inner">
-        <img src="/static/1.jpg" class="d-block w-100" alt="...">
-        <div class="black-overlay"></div>
+      <div class="carousel-item active">
+        <img src="/static/Remodelación Casa Montero/portada1.jpg" class="d-block w-100" style="height: 700px; object-fit: cover;">
         <div class="carousel-caption d-none d-md-block">
           <h5>First slide label</h5>
           <p>Some representative placeholder content for the first slide.</p>
         </div>
       </div>
-      <div class="carousel-item" id="inner">
-        <img src="/static/2.jpg" class="d-block w-100" alt="...">
-        <div class="black-overlay"></div>
+      <div class="carousel-item">
+        <img src="/static/Remodelación Oficinas Palm Trade/IMG_20211111_013419886_HDR.jpg" class="d-block w-100" style="height: 700px; object-fit: cover;">
         <div class="carousel-caption d-none d-md-block">
           <h5>Second slide label</h5>
           <p>Some representative placeholder content for the second slide.</p>
         </div>
       </div>
-      <div class="carousel-item" id="inner">
-        <img src="/static/3.jpg" class="d-block w-100" alt="...">
-        <div class="black-overlay"></div>
+      <div class="carousel-item">
+        <img src="/static/Muebles Especiales/3.jpg" class="d-block w-100" style="height: 700px; object-fit: cover;">
         <div class="carousel-caption d-none d-md-block">
           <h5>Third slide label</h5>
           <p>Some representative placeholder content for the third slide.</p>
@@ -52,11 +55,108 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <div class="about" data-aos="fade-in" data-aos-duration="500">
+  <div class="about">
     <h1 style="margin-top: 20px;">Nuestra historia</h1>
     <h5 style="margin-top: 10px; margin-bottom: 10px; justify-content:center;">Calidad y experiencia</h5>
-    <h8 style="text-align: center; margin-left: 20%; margin-right: 20%;">Somos un equipo de arquitectos con más de 30 años de experiencia en Santiago, Chile. 
+    <h8 style="text-align: center; margin-left: 20%; margin-right: 20%;">Somos un equipo de arquitectos con más de 10 años de experiencia en Santiago, Chile. 
     Nos especializamos en diseño arquitectónico, renovación, consultoría y más. Siempre buscamos expandir nuestro conocimiento
     y ofrecer los mejores servicios a nuestros clientes. Contáctenos para conocer más.</h8>
   </div>
+<section class="bg-light py-3 py-md-5 py-xl-8 my-1">
+  <div class="container">
+    <div class="row gy-3 gy-md-5 gy-lg-0 align-items-center">
+      <div class="col-12 col-lg-5">
+        <h3 class="fs-6 text-secondary mb-2 mb-xl-3">La mejor empresa de Arquitectura y Construcción</h3>
+        <h2 class="display-5 mb-3 mb-xl-4">¿Tienes una idea? Nosotros la desarrollamos, diseñamos y construimos.</h2>
+        <p class="mb-4 mb-xl-5">Somos unas de las mejores empresas de Arquitectura y Construcción en Chile, desarrollamos proyectos novedosos, de la mano con el cliente y con una entrega rápida y confiable.</p>
+        <a href="#!" class="btn bsb-btn-2xl btn-primary rounded-pill">Más Detalles</a>
+      </div>
+      <div class="col-12 col-lg-7">
+        <div class="row justify-content-xl-end">
+          <div class="col-12 col-xl-11">
+            <div class="row gy-3 gy-md-4">
+              <div class="col-12 col-sm-6">
+                <div class="card border-0 border-bottom border-primary shadow-sm">
+                  <div class="card-body text-center p-4 p-xxl-5">
+                    <h3 class="display-1 mb-2">20+</h3>
+                    <p class="fs-5 mb-0 text-secondary">Proyectos Construidos</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="card border-0 border-bottom border-primary shadow-sm">
+                  <div class="card-body text-center p-4 p-xxl-5">
+                    <h3 class="display-1 mb-2">20+</h3>
+                    <p class="fs-5 mb-0 text-secondary">Proyectos diseñados</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="card border-0 border-bottom border-primary shadow-sm">
+                  <div class="card-body text-center p-4 p-xxl-5">
+                    <h3 class="display-1 mb-2">10+</h3>
+                    <p class="fs-5 mb-0 text-secondary">Clientes Felices</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="card border-0 border-bottom border-primary shadow-sm">
+                  <div class="card-body text-center p-4 p-xxl-5">
+                    <h3 class="display-1 mb-2">50+</h3>
+                    <p class="fs-5 mb-0 text-secondary">Muebles Entregados</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bsb-fact-5 py-3 py-md-5">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-12 col-md-10 col-lg-8 col-xl-7">
+        <h3 class="fs-5 mb-2 text-secondary text-center text-uppercase">Nuestra Experiencia</h3>
+        <h2 class="display-5 mb-5 mb-xl-9 text-center">Tenemos una cartera de Proyectos Demostrable</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="container-fluid bg-light border shadow">
+          <div class="row">
+            <div class="col-12 col-md-4 p-0">
+              <div class="card border-0 bg-transparent">
+                <div class="card-body text-center p-4 p-xxl-5">
+                  <h3 class="display-1 mb-2">60+</h3>
+                  <p class="fs-5 mb-0 text-secondary">Projectos Diseñados</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 p-0 border-top border-bottom border-start border-end">
+              <div class="card border-0 bg-transparent">
+                <div class="card-body text-center p-4 p-xxl-5">
+                  <h3 class="display-1 mb-2">18+</h3>
+                  <p class="fs-5 mb-0 text-secondary">Proyectos Construidos</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 p-0">
+              <div class="card border-0 bg-transparent">
+                <div class="card-body text-center p-4 p-xxl-5">
+                  <h3 class="display-1 mb-2">10+</h3>
+                  <p class="fs-5 mb-0 text-secondary">Clientes Felices</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock %}
