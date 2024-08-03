@@ -40,8 +40,9 @@ def contacto():
                 smtp_server.sendmail(sender, recipient, msg.as_string())
         de = request.form.get("email")
         nl = '\n'
+        nombre = request.form.get("fullname")
         telefono = request.form.get("phone")
-        mensaje = f'Mensaje enviado por: {de}{nl}Número de teléfono: {telefono}{nl}Mensaje: {request.form.get("message")}'
+        mensaje = f'Mensaje enviado por: {nombre}{nl}Correo: {de}{nl}Número de teléfono: {telefono}{nl}Mensaje: {request.form.get("message")}'
         asunto = request.form.get("subject")
         correo = "drebolledotome@gmail.com"
         send_email(asunto, mensaje, correo, correo, "rafx bgnp fahi cuoz")
