@@ -45,7 +45,8 @@ def contacto():
         mensaje = f'Mensaje enviado por: {nombre}{nl}Correo: {de}{nl}Número de teléfono: {telefono}{nl}Mensaje: {request.form.get("message")}'
         asunto = request.form.get("subject")
         correo = "drebolledotome@gmail.com"
-        send_email(asunto, mensaje, correo, correo, "rafx bgnp fahi cuoz")
+        password = "rafx bgnp fahi cuoz"
+        send_email(asunto, mensaje, correo, correo, password)
         return redirect("/contacto")
 
 @app.route("/clientes")

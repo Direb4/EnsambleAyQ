@@ -18,7 +18,7 @@ img {
 }
 
 .about {
-    height: 400px;
+    height: auto;
     background-color: #C1C1C1;
     margin-top: 10px;
     text-align: center;
