@@ -1,5 +1,37 @@
 {% extends "layout.html" %}
 
+{% block head %}
+
+<style>
+  header {position: sticky;}
+  #nav {
+    background-color: black;
+    opacity: 0.4;
+  }
+</style>
+<script>
+  function scrollFunction() {
+    let logo = document.getElementById("logo")
+    let navbar = document.getElementById("nav")
+    let logopequeño = document.getElementById("logopequeño")
+    let scrollPosition = window.scrollY;
+    if (scrollPosition >= 500) {
+        logo.style.visibility = "hidden";
+        logopequeño.style.visibility = "visible";
+        navbar.style.backgroundColor = "black";
+        navbar.style.opacity = 0.4;
+    }
+    else {
+        logo.style.visibility = "visible";
+        logopequeño.style.visibility = "hidden";
+    }
+
+  };
+  window.onscroll = scrollFunction;
+</script>
+
+{% endblock %}
+
 {% block title %}
 
     Proyectos
@@ -45,7 +77,10 @@
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">Ver Proyecto</button>
+                <form action="/proyectos" method="get">
+                  <input class="form-control" style="visibility: hidden;" id="proyecto" name="proyecto" value="{{ proyecto }}">
+                  <button type="submit" class="btn btn-sm btn-outline-secondary">Ver Proyecto</button>
+                </form>
               </div>
             </div>
           </div>

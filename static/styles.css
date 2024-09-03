@@ -1,7 +1,7 @@
 img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain;
+    object-fit:cover;
 }
 
 #inner {
@@ -39,7 +39,7 @@ h1 {
   }
 
 header {
-    position: sticky;
+    position:fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -47,9 +47,11 @@ header {
         z-index: 99;
 }
 
-.cabecera :hover svg, .cabecera :hover {
-    fill: lightgray;
+.cabecera :hover svg, .cabecera .nav-item :hover  {
+  fill: rgb(250, 174, 33);
+  color: rgb(250, 174, 33);
 }
+
 
 @keyframes slide {
     from {
@@ -100,4 +102,70 @@ header {
   .logos-slide img {
     height: 50px;
     margin: 0 40px;
+  }
+
+  .nav-item{
+    text-align: right;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  .div1 {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  .div2 { grid-area: 2 / 1 / 3 / 2; }
+  .div3 { 
+    grid-area: 2 / 2 / 3 / 3;
+    text-align: center;
+   }
+  .div4 { grid-area: 1 / 3 / 3 / 4; }
+  .div5 { 
+    grid-area: 3 / 3 / 4 / 4;
+    text-align: center;
+  }
+  .div6 { grid-area: 3 / 2 / 4 / 3; }
+  .div7 { grid-area: 3 / 1 / 5 / 2; }
+  .div8 { grid-area: 4 / 2 / 5 / 4; }
+  .div9 { grid-area: 5 / 1 / 6 / 2; }
+  .div10 { 
+    grid-area: 5 / 2 / 6 / 3; 
+    text-align: center;
+  }
+  .div11 { grid-area: 5 / 3 / 6 / 4; }
+
+  .image {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .image:hover {
+    opacity: 0.7;
+  }
+
+  .div3:hover {
+    opacity: 0.7;
+    background-color: black;
+    color: white;
+  }
+
+  .div5:hover {
+    opacity: 0.7;
+    background-color: black;
+    color: white;
+  }
+
+  .div10:hover {
+    opacity: 0.7;
+    background-color: black;
+    color: white;
   }

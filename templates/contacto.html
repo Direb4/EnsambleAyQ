@@ -6,6 +6,33 @@
 <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/background/background.css">
 <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/margin/margin.css">
 <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/padding/padding.css">
+<style>
+  header {position: sticky;}
+  #nav {
+    background-color: black;
+    opacity: 0.4;
+  }
+</style>
+<script>
+  function scrollFunction() {
+    let logo = document.getElementById("logo")
+    let navbar = document.getElementById("nav")
+    let logopequeño = document.getElementById("logopequeño")
+    let scrollPosition = window.scrollY;
+    if (scrollPosition >= 500) {
+        logo.style.visibility = "hidden";
+        logopequeño.style.visibility = "visible";
+        navbar.style.backgroundColor = "black";
+        navbar.style.opacity = 0.4;
+    }
+    else {
+        logo.style.visibility = "visible";
+        logopequeño.style.visibility = "hidden";
+    }
+
+  };
+  window.onscroll = scrollFunction;
+</script>
 
 {% endblock %}
 

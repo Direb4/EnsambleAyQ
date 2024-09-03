@@ -19,6 +19,7 @@ def inicio():
 def proyectos():
     proyectos = db.execute("SELECT nombre FROM proyectos")
     proyectos = [d['nombre'] for d in proyectos]
+    seleccion = request.args.get("proyecto")
     return render_template("proyectos.html", proyectos=proyectos)
 
 @app.route("/quienes_somos")
