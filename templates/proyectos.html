@@ -45,32 +45,7 @@
       {% for proyecto in proyectos %}
       <div class="col" id="tarjetaproyecto">
         <div class="card shadow-sm">
-          {% set proyecto = proyecto.replace(" ","_") %}
-          <div id="carousel{{proyecto}}" class="carousel slide" data-bs-theme='dark'>
-          {% set proyecto = proyecto.replace("_"," ") %}
-            <div class="carousel-inner">
-              {% for i in range (3) %}
-                {% if i == 0 %}
-                <div class="carousel-item active">
-                  <img src="/static/{{proyecto}}/{{ i + 1 }}.jpg" class="d-block w-100" style="height: 419.33px">
-                </div>
-                {% else %}
-                <div class="carousel-item">
-                  <img src="/static/{{proyecto}}/{{ i + 1 }}.jpg" class="d-block w-100" style="height: 419.33px">
-                </div>
-                {% endif %}
-              {% endfor %}
-            </div>
-            {% set proyecto = proyecto.replace(" ","_") %}
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel{{proyecto}}" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel{{proyecto}}" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+          <img src="/static/{{proyecto}}/1.jpg" class="d-block w-100" style="height: 419.33px">
           {% set proyecto = proyecto.replace("_"," ") %}
           <div class="card-body">
             <h5 class="card-title">{{ proyecto }}</h5>
